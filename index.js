@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:false}))
 app.get("/",async(req,res)=>{
     const users = await User.find({});
     res.render("index",{
-        title:"thiss is homepage",
+        title:"thiss is homepage !",
         users:users
     })
   
